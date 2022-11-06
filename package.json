@@ -1,0 +1,27 @@
+{
+  "name": "lesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mero-04/lesson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mero-04/lesson/issues"
+  },
+  "homepage": "https://github.com/Mero-04/lesson#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20"
+  }
+}
