@@ -1,8 +1,24 @@
 const express = require('express')
+const morgan = require('morgan')
+const mysql = require('mysql')
+
 const app = express()
+
+const db = mysql.createConnection({
+    host: "localhost",
+    user:"root",
+    database:"test"
+});
+
+db.connect((err) => {
+    if(err) throw err;
+    console.log("Success Connection");
+})
 
 app.set('view engine','ejs');
 app.use(express.static('public'));
+app.use(morgan('dev'));
+
 
 
 
